@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --clr-mauve: #cfbaf0ff;
+  --clr-blue-green: #219ebcff;
+  --clr-emerald: #10bd5e;
+  --clr-light-green: #b6f099;
+  --clr-dark-red: #cc1006;
+  --clr-amber: #ffbe0bff;
+  --clr-rose: #ff006eff;
+  --clr-blue-violet: #8338ecff;
+  --clr-azure: #3a86ffff;
+  --clr-orange: #fb5607ff;
+  --clr-folly: #ff0054ff;
+  --clr-melon: #ffa69eff;
+  --clr-fire-engine-red: #fa2447;
+  --clr-kelly-green: #61e24d;
+  --clr-lite-gray: #dddfdf;
+  --clr-dark-gray: #595959ff;
+  --clr-dark-shadow: 0 30px 38px rgba(0, 0, 0, 0.302),
+    0 15px 10px rgba(0, 0, 0, 0.22);
+  --clr-light-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+body {
+  font-family: 'Robot', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-amber);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: 100vh;
+  object-fit: contain;
+  -o-object-fit: contain;
+}
+
+.main-container {
+  width: 24rem;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: var(--clr-dark-shadow);
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-control {
+  display: flex;
+  margin: 1rem auto;
+}
+
+.input-title {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 2px solid var(--clr-blue-green);
+  outline: none;
+}
+
+.btn-add {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: var(--clr-azure);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 2px solid var(--clr-blue-green);
+  outline: none;
+  cursor: pointer;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  /* gap: 1rem; */
+  width: 20rem;
+  min-height: 2rem;
+  justify-content: space-evenly;
+  background-color: var(--clr-lite-gray);
+  border-radius: 8px;
+}
+
+.list-text {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.btn-edit,
+.btn-delete {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: var(--clr-kelly-green);
+}
+
+.btn-delete {
+  background-color: var(--clr-fire-engine-red);
+}
